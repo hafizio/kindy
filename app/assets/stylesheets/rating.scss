@@ -1,0 +1,23 @@
+.rating {
+  padding-left: 0;
+  list-style: none;
+
+  .rating__star {
+    display: inline-block;
+    padding: 0px;
+    border: none !important;
+
+    .fa {
+      padding: 0px;
+      font-size: 18px !important;
+
+      &.fa-star {
+        color: orange;
+      }
+
+      &.fa-star-o {
+        color: gray;
+      }
+    }
+  }
+}
