@@ -14,7 +14,12 @@ gem 'bundler', '>= 1.8.4'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '~> 4.0.0.alpha'
+  gem 'rails-assets-OwlCarousel2'
 end
+
+gem 'autoprefixer-rails'
+gem 'slim-rails'
+gem 'font-awesome-rails'
 
 group :development do
   gem 'web-console', '~> 2.0'

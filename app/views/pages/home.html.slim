@@ -1,0 +1,14 @@
+.site-wrapper
+  .site-wrapper-inner
+    .cover-container
+      = render 'shared/nav'
+      .inner.cover
+        h1.cover-heading Cover your page.
+        p.lead Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+        .input-group.input-group-lg
+          input.form-control placeholder="Search for kindergarten around you..." type="text"
+          span.input-group-btn
+            = link_to 'Search', result_path, class: 'btn btn-primary'
+      .mastfoot
+        .inner
+          p by Startup Weekend
