@@ -10,6 +10,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bundler', '>= 1.8.4'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap', '~> 4.0.0.alpha'
+end
 
 group :development do
   gem 'web-console', '~> 2.0'
