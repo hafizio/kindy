@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bundler', '>= 1.8.4'
+gem 'geocoder', '~> 1.2.6'
+gem 'gon', github: 'gazay/gon'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '~> 4.0.0.alpha'

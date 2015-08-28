@@ -1,0 +1,28 @@
+.bg
+  .col-md-12
+    .space-top
+      h2.text-center Photo Gallery
+      .space-top
+        ul.list-unstyled.owl-carousel
+          - (1..10).each do |n|
+            li.item = image_tag("http://www.safekidsoregon.org/wp-content/uploads/2013/04/LR-group-of-Kids-with-hands-in-air-e1367363683238.jpg")
+
+javascript:
+  $('.owl-carousel').owlCarousel({
+    item:2,
+    center:true,
+    loop:true,
+    nav:true,
+    autoWidth:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+  })

@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Kindy
+    = Gon::Base.render_data({})
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags 
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
+    link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css" rel="stylesheet"
+    link href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css" rel="stylesheet"
+  body
+    = yield
+    script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js", cache: true
+    script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js", cache: true

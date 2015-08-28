@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'result', to: 'pages#result', as: 'result'
 
-  resources :centres, only: [:index]
+  resources :listings, only: [:index]
 end
