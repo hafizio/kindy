@@ -1,0 +1,94 @@
+.bg
+  section
+    h1 Brainy Bunch VS IIUM Monstessori
+  .container
+    table.table
+      thead.thead-inverse
+        tr
+          th
+          th.white.text-center Brainy Bunch
+          th.white.text-center IIUM Montessori
+      tbody
+        tr
+          th scope="row"  Fees
+          td RM 600
+          td RM 550
+        tr
+          th scope="row" Average Rating
+          td = star_rating(5)
+          td = star_rating(5)
+        tr
+          th scope="row" Age Groups
+          td 3 to 6 Years Old
+          td 4 to 6 Years Old
+        tr
+          th scope="row" School Sessions
+          td
+            p 9.00 AM - 4.00 PM
+            p 4.00 PM - 6.00 PM
+          td
+            p 9.00 AM - 3.00 PM
+            p 3.00 AM - 5.30 PM
+        tr
+          th scope="row" Facilities
+          td
+            p Playground
+            p Computer Lab
+            p Air Conditioning
+            p Big Yard
+          td
+            p Playground
+            p Computer Lab
+        tr
+          th scope="row" Student Capacity
+          td 50 pax
+          td 40 pax
+        tr
+          th scope="row" Teacher Count
+          td 5 pax
+          td 6 pax
+        tr
+          th scope="row" Teaching Medium
+          td English
+          td Mixed
+        tr
+          th scope="row" Curriculum
+          td
+            p English
+            p Little Scientist
+            p Arabic
+            p Math
+            p Mandarin
+          td
+            p English
+            p Arabic
+            p Math
+        tr
+          th scope="row" Extra Curriculum Activities
+          td
+            p Swimming Classes
+            p Tae Kwan Do
+            p Ninjutsu
+            p Karate
+            p Painting
+            p Music
+          td
+            p Swimming Classes
+            p Tae Kwan Do
+        tr
+          th scope="row" Meals
+          td
+            p Breakfast
+            p Lunch
+            p Snacks
+          td
+            p Breakfast
+            p Lunch
+        tr
+          th scope="row" Field Trips
+          td 4 times per year
+          td 3 times per year 
+        tr
+          th
+          td = link_to "Request call", call_path, class: 'btn btn-primary' 
+          td = link_to "Request call", call_path, class: 'btn btn-primary' 

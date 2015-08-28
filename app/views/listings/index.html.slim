@@ -10,16 +10,80 @@
       .col-md-8
         .box.text-left
           h4 Brainy Bunch
-          p.leads fjsfnjkfhk sfef ekf jek
+          p.leads Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
       .col-md-4
         .card
           = link_to listings_path do
             = image_tag 'http://www.npdlaw.com/_assets/images/map.gif', size: '318x180', class: 'card-img-top'
           .card-block
-            h4.card-title Brainch Bunch
+            h4.card-title Brainy Bunch
             = star_rating(5)
-            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+        .box
+          h4 Info
+          ul.text-left
+            li Mr Ali Gunawan
+            li ali@guna.com
+            li 019568493
+            li Students: 45 persons
+            li Teacher: 5 persons
+            li Teacher-Student Ratio: 1:9
+    .row
+      section
+        h1.text-center Parents Review
+      .col-md-4
+        .card
+          .card-block
+            = image_tag('ava1.png', size: '150x150', class: 'avatar--rounded')
+            h6.card-title Ronaldo Ahmad
+            = star_rating(5)
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+      .col-md-4
+        .card
+          .card-block
+            = image_tag('ava2.jpg', size: '150x150', class: 'avatar--rounded')
+            h6.card-title Brainy Bunch
+            = star_rating(5)
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+      .col-md-4
+        .card
+          .card-block
+            = image_tag('ava3.jpg', size: '150x150', class: 'avatar--rounded')
+            h6.card-title Brainy Bunch
+            = star_rating(5)
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+    .row
+      section
+        h1.text-center Kindies Nearby KLCC
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'http://www.npdlaw.com/_assets/images/map.gif', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Qdees
+            = star_rating(5)
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+            = link_to 'Compare', compare_path, class: 'btn btn-primary'
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'http://www.npdlaw.com/_assets/images/map.gif', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Smart Reader
+            = star_rating(5)
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+            = link_to 'Compare', compare_path, class: 'btn btn-primary'
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'http://www.npdlaw.com/_assets/images/map.gif', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title IIUM Monstessori
+            = star_rating(5)
+            p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
+            = link_to 'Compare', compare_path, class: 'btn btn-primary'
 javascript:
   $('.owl-carousel').owlCarousel({
     item:2,

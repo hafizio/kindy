@@ -4,4 +4,10 @@ class PagesController < ApplicationController
 
   def search
   end
+
+  def compare
+  end
+
+  def call
+  end
 end

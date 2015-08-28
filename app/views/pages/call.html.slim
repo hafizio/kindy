@@ -1,0 +1,15 @@
+.bg
+  .container
+    section
+      h1 Request Visit for Brainy Bunch
+    form.col-md-6.col-md-offset-3
+      .form-group
+        = text_field_tag :name, nil, placeholder: 'Name', class: 'form-control'
+      .form-group
+        = text_field_tag :phone, nil, placeholder: 'Phone Number', class: 'form-control'
+      .form-group
+        = date_field_tag :date, nil, placeholder: 'Suggested Date', class: 'form-control'
+      .form-group
+        = text_area_tag :msg, nil, placeholder: 'Your message here..', rows: 5, class: 'form-control'
+      .form-group
+        = link_to 'Send Request', listings_path, class: 'btn btn-primary'
