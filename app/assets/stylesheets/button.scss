@@ -1,0 +1,7 @@
+.btn-primary {
+  background-color: #00BCD4;
+  
+  &:hover {
+    background-color: darken(#00BCD4, 5%)
+  }
+}

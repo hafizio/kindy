@@ -1,0 +1,18 @@
+#map style="width:100%;"
+.bg
+  .container
+    section.row
+      .col-lg-12
+        .input-group.input-group-lg
+          input.form-control placeholder="Brainy Bunch" type="text"
+          span.input-group-btn
+            = link_to 'Search', search_path, class: 'btn btn-primary'
+    section.row
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'http://d33y93cfm0wb4z.cloudfront.net/Jolanda/ACTIVITY/KidsRunningGreenGrassHiRes476.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Brainch Bunch
+            = star_rating(5)
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.

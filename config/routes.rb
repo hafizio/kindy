@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
-  get 'result', to: 'pages#result', as: 'result'
+  get 'search', to: 'pages#search', as: 'search'
 
   resources :listings, only: [:index]
 end

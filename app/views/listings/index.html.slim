@@ -1,11 +1,24 @@
 .bg
   .col-md-12
     .space-top
-      h2.text-center Photo Gallery
       .space-top
         ul.list-unstyled.owl-carousel
           - (1..10).each do |n|
             li.item = image_tag("http://www.safekidsoregon.org/wp-content/uploads/2013/04/LR-group-of-Kids-with-hands-in-air-e1367363683238.jpg")
+  .container
+    .row
+      .col-md-8
+        .box.text-left
+          h4 Brainy Bunch
+          p.leads fjsfnjkfhk sfef ekf jek
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'http://www.npdlaw.com/_assets/images/map.gif', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Brainch Bunch
+            = star_rating(5)
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
 
 javascript:
   $('.owl-carousel').owlCarousel({
