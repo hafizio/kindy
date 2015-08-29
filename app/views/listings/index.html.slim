@@ -3,8 +3,8 @@
     .space-top
       .space-top
         ul.list-unstyled.owl-carousel
-          - (1..10).each do |n|
-            li.item = image_tag("http://www.safekidsoregon.org/wp-content/uploads/2013/04/LR-group-of-Kids-with-hands-in-air-e1367363683238.jpg")
+          - (1..6).each do |n|
+            li.item = image_tag("k#{n}.jpg", height: '600')
   .container
     .row
       .col-md-8
@@ -80,7 +80,7 @@
           = link_to listings_path do
             = image_tag 'http://www.npdlaw.com/_assets/images/map.gif', size: '318x180', class: 'card-img-top'
           .card-block
-            h4.card-title IIUM Monstessori
+            h4.card-title IIUM Montessori
             = star_rating(5)
             p.card-text.text-justify Some quick example text to build on the card title and make up the bulk of the card's content.
             = link_to 'Compare', compare_path, class: 'btn btn-primary'

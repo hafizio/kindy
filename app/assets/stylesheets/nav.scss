@@ -1,0 +1,28 @@
+.inner {
+  color: grey;
+
+  .nav-link {
+    color: grey;
+  }
+}
+
+.input-group {
+  .col-md-8, .col-md-2 {
+    padding: 0px;
+  }
+}
+
+.search {
+  color: grey;
+  width: 200px;
+  height: 50px;
+}
+
+.selection {
+  color: grey;
+  width: 200px;
+  height: 50px;
+  border-radius: 0px;
+  border: none;
+  border-left: 1px solid grey;
+}

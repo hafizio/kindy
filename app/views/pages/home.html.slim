@@ -4,11 +4,93 @@
       = render 'shared/nav'
       .inner.cover
         h1.cover-heading Discover Great Education Near You
-        p.lead Education is important
         .input-group.input-group-lg
-          input.form-control placeholder="Search for kindergarten around you..." type="text"
+          .col-md-8
+            input.form-control.search placeholder="Search for kindergarten around you..." type="text"
+          .col-md-2
+            select.c-select.selection
+              option selected="" Select Your Location
+              option Putrajaya
+              option Kuala Lumpur
+              option Penang
+          .col-md-2
+            select.c-select.selection
+              option selected="" Select Category
+              option Kindergarten
+              option Education Centre
+              option Playschool
+              option 
           span.input-group-btn
             = link_to 'Search', search_path, class: 'btn btn-primary'
-      .mastfoot
-        .inner
-          p by Startup Weekend
+section.what
+  .container
+    h1.title What Do We Provide
+    .col-md-4
+      .fa.fa-search.fa-4x
+      p
+      h4 Discover Classes for Your Kids
+      p Discover the best classes for your kids. Choose classes by ratings, user reviews and make comparisons
+    .col-md-4
+      .fa.fa-send.fa-4x
+      p
+      h4 Explore Educational Activities
+      p Engage your kids with our user submitted activities that will help in nurturing intelligence and self esteem
+    .col-md-4
+      .fa.fa-users.fa-4x
+      p
+      h4 Join Community Events
+      p Organize events and meet like-minded parents to share knowledge about early childhood education
+  
+section.events
+  .container
+    h1.title Events Happening Around You
+    .row
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'e1.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Ali's Birthday Party
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            a.btn.btn-primary View
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'e2.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Free Swimming Class
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            a.btn.btn-primary View
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'e3.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Practical Montessori
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            a.btn.btn-primary View
+    .row
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'e4.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Horse Riding Lesson
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            a.btn.btn-primary View
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'e5.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Money 101 for Kids
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            a.btn.btn-primary View
+      .col-md-4
+        .card
+          = link_to listings_path do
+            = image_tag 'e6.jpg', size: '318x180', class: 'card-img-top'
+          .card-block
+            h4.card-title Parents Appreciation Day
+            p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+            a.btn.btn-primary View
